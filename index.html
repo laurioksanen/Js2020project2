@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head"> 
+		<title>Todo-List</title>
+		<link rel="stylesheet" href="styles.css">
+		<meta charset="utf-8" />
+	</head>	
+		
+    <body onload="teatteri('load')">
+        
+    
+<h1 id="otsikko">Finnkino</h1>	
+        <!-- Hakuvalikko ja hakupalkki
+        Molemmat kutsuvat funktiota teatteri ja antavat sille parametrin
+        , jolla tunnistetaan mistä kutsu on tullut -->
+<span><select name="mySelect" id="teatterit" onchange="teatteri('x')">
+    <option value="tennispalatsi">Helsinki: Tennispalatsi</option>
+    <option value="kinopalatsi">Helsinki: Kinopalatsi</option>
+    <option value="maxim">Helsinki: Maxim</option>
+    <option value="itis">Helsinki: Itis</option>
+    <option value="omena">Espoo: Omena</option>
+    <option value="sello">Espoo: Sello</option>
+    <option value="flamingo">Vantaa: Flamingo</option>
+    <option value="strand">Lappeenranta: Strand</option>
+    <option value="kuvapalatsi">Lahti: Kuvapalatsi</option>
+    <option value="atlas">Tampere: Cine Atlas</option>
+    <option value="plevna">Tampere: Plevna</option>
+    <option value="kinopalatsiturku">Turku: Kinopalatsi</option>
+    <option value="promenadi">Pori: Promenadi</option>
+    <option value="fantasia">Jyväskylä: Fantasia</option>
+    <option value="scala">Kuopio: Scala</option>
+    <option value="plaza">Oulu: Plaza</option>
+  </select>
+
+  <input id="teatteriHaku"></input><button id="search"onclick="teatteri('y')">etsi</button>
+  <br>
+  </span>
+     <!-- div johon taulu elokuvatiedot sisältävä taulu syötetään -->
+<div id="divi"></div>
+
+    </body>
+    <script src="script.js"></script>
+</html>
